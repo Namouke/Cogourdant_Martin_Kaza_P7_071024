@@ -1,0 +1,21 @@
+.home {
+    @include flexCenter;
+    @include layoutFooter;
+    flex-direction: column;
+    margin: 63px 100px 10px 100px;
+}
+
+
+
+@media screen and (max-width : 875px) {
+    .home {
+        margin: 35px 50px 25px 50px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .home {
+        margin: 16px 19px 10px 20px;
+    }
+
+}

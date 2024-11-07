@@ -1,0 +1,30 @@
+.about__banner {
+    width: 100%;
+    height: 223px;
+    margin-bottom: 31px;
+}
+
+.about__banner__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    mix-blend-mode: darken;
+}
+
+@media screen and (max-width: 875px) {
+    .about__banner {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about__banner {
+        margin-bottom: 19px;
+    }
+
+    .about__banner__image {
+        border-radius: 10px;
+    }
+}

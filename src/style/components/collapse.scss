@@ -1,0 +1,138 @@
+.accrodion {
+    margin-left: 108px;
+    margin-right: 109px;
+    font-family: $font-family-base;
+    font-weight: 500;
+}
+
+.accordion__wrap {
+    @include flexSpaceBetween;
+    background-color: $color-primary;
+    height: 47px;
+    margin-bottom: 31px;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.accordion__wrap.open {
+    margin-bottom: 0;
+    /* Pas de marge quand le contenu est ouvert */
+}
+
+.accordion__title {
+    color: $color-secondary;
+    font-size: 24px;
+    height: 34px;
+    margin-left: 18.08px;
+}
+
+.accordion__vector {
+    @include flexCenter;
+    width: 32px;
+    height: 32px;
+    margin-right: 17.29px;
+}
+
+.vector__mod {
+    width: 24px;
+    height: 13.71px;
+}
+
+.accordion__content {
+    background-color: $color-tertiary;
+    color: $color-primary;
+    font-size: 24px;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: padding 0.3s ease, max-height 0.3s ease;
+
+}
+
+.accordion__content.open {
+    padding: 27px 27px 19px 18px;
+    margin-bottom: 31px;
+}
+
+@media screen and (max-width: 875px) {
+    .accrodion {
+        height: 100%;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .accordion__wrap {
+        height: 40px;
+        margin-bottom: 26px;
+    }
+
+    .accordion__title {
+        font-size: 18px;
+        height: 27px;
+        margin-left: 14.08px;
+    }
+
+    .accordion__vector {
+        width: 24px;
+        height: 24px;
+        margin-right: 13px;
+    }
+
+    .vector__mod {
+        width: 20px;
+        height: 9.5px;
+    }
+
+    .accordion__content {
+        font-size: 18px;
+    }
+
+    .accordion__content.open {
+        padding: 27px 17px 19px 15px;
+        margin-bottom: 26px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .accrodion {
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .accordion__wrap {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .accordion__title {
+        font-size: 12px;
+        height: 19px;
+        margin-left: 11.51px;
+    }
+
+    .accordion__vector {
+        width: 18.42px;
+        height: 18.42px;
+        margin-right: 5.58px;
+    }
+
+    .vector__mod {
+        width: 16px;
+        height: 9.14px;
+    }
+
+    .accordion__content {
+        font-size: 12px;
+    }
+
+    .accordion__content.open {
+        padding: 23.08px 6.91px 52.58px 11.51px;
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,19 @@
+.housingCarrousel {
+    position: relative;
+    min-height: 415px;
+    border-radius: 25px;
+
+    &__image {
+        position: relative;
+        max-height: 415px;
+        border-radius: 25px;
+        width: 100%;
+        object-fit: none;
+    }
+
+    &__button {
+        position: relative;
+    }
+
+    /* &__button__vector {} */
+}
