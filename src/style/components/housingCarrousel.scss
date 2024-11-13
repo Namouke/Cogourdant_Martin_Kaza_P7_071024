@@ -1,19 +1,57 @@
 .housingCarrousel {
     position: relative;
-    min-height: 415px;
+    height: 415px;
     border-radius: 25px;
 
     &__image {
-        position: relative;
         max-height: 415px;
         border-radius: 25px;
         width: 100%;
-        object-fit: none;
+        object-fit: cover;
+        object-position: center;
     }
 
-    &__button {
-        position: relative;
+    &__button__left {
+        position: absolute;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 23.36px;
     }
 
-    /* &__button__vector {} */
+    &__button__right {
+        position: absolute;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 23.36px;
+    }
+
+    &__button__vector {
+        width: 46.68px;
+        height: 79.2px;
+    }
+
+    &__counter {
+        position: absolute;
+        width: 24px;
+        height: 32.4px;
+        font-size: 18px;
+        font-weight: 500;
+        bottom: 24px;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        align-items: center;
+        color: $color-secondary;
+    }
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
 }

@@ -1,4 +1,6 @@
 .housing {
     @include layoutFooter;
     margin: 20px 100px 10px 100px;
+    font-family: $font-family-base;
+    font-weight: 500;
 }
