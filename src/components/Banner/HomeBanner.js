@@ -1,4 +1,6 @@
 import React from "react";
+import "../../style/components/banner/homeBanner.scss"
+
 
 
 const homeBanner = () => {

@@ -1,7 +1,11 @@
+@import '/src/style/base/mixins.scss';
+@import '/src/style/base/variables.scss';
+
+
 .home__banner {
     @include flexCenter;
     font-family: $font-family-base;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/imageAcceuil.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../assets/imageAcceuil.png');
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -40,6 +44,7 @@
         border-radius: 10px;
         display: flex;
         justify-content: flex-start;
+        min-width: 100%;
     }
 
     .home__banner__text {

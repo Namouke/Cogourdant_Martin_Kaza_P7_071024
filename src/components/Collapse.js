@@ -2,15 +2,16 @@ import React from "react";
 import { useState } from "react";
 import vectorOpen from "../assets/collapseVectorOpen.png"
 import vectorClose from "../assets/collapseVectorClose.png"
+import "../style/components/collapse.scss"
 
 const Collapse = (props) => {
-    const title = props.title;
+    const {title, children, className=""} = props;
 
     const [open, setOpen] = useState(false);
 
 
     return (
-        <div className="accrodion">
+        <div className={`accordion ${className}`}>
             <div className={`accordion__wrap ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
                 <p className="accordion__title">{title}</p>
                 <div className="accordion__vector">
@@ -22,7 +23,7 @@ const Collapse = (props) => {
                 </div>
             </div>
             <div className={`accordion__content ${open ? 'open' : ''}`}>
-                {open && props.children}
+                {open && children}
             </div>
 
         </div>

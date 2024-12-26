@@ -1,6 +1,15 @@
+@import '/src/style/base/mixins.scss';
+@import '/src/style/base/variables.scss';
+
 .housing {
     @include layoutFooter;
     margin: 20px 100px 10px 100px;
     font-family: $font-family-base;
     font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+    .housing {
+        margin: 27px 20px 15px 20px;
+    }
 }

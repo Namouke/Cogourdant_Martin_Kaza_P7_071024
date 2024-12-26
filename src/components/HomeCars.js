@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logementData from "../data/logements.json";
+import "../style/components/homeCards.scss"
 
 const homeCards = () => {
     return (

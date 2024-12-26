@@ -1,6 +1,7 @@
 import React from "react";
+import "../../style/components/banner/aboutBanner.scss"
 
-const aboutBannerImage = require('../assets/imageAbout.png')
+const aboutBannerImage = require('../../assets/imageAbout.png')
 
 const aboutBanner = () => {
     return (

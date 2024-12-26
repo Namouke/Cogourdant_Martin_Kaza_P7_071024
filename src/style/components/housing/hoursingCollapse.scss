@@ -1,0 +1,43 @@
+.housing__collapse {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+
+    .accordion__wrap {
+        height: 52px;
+    }
+
+    .accordion__title {
+        font-size: 18px;
+        height: 26px;
+        margin-left: 20px;
+    }
+
+    .accordion__vector {
+        margin-right: 9px;
+    }
+
+    &__description {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    &__equipement {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 875px)*/
+@media screen and (max-width: 500px) {
+    .housing__collapse {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 76px;
+    }
+}

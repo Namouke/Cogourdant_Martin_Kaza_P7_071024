@@ -1,4 +1,7 @@
-.accrodion {
+@import '/src/style/base/mixins.scss';
+@import '/src/style/base/variables.scss';
+
+.accordion {
     margin-left: 108px;
     margin-right: 109px;
     font-family: $font-family-base;
@@ -58,7 +61,7 @@
 }
 
 @media screen and (max-width: 875px) {
-    .accrodion {
+    .accordion {
         height: 100%;
         margin-left: 64px;
         margin-right: 64px;
@@ -98,7 +101,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .accrodion {
+    .accordion {
         height: 100%;
         margin-left: 0;
         margin-right: 0;

@@ -1,3 +1,6 @@
+@import '/src/style/base/mixins.scss';
+@import '/src/style/base/variables.scss';
+
 .errorPage {
     @include flexCenter;
     @include layoutFooter;
