@@ -89,11 +89,12 @@
 @media screen and (max-width: 500px) {
     .housingInformation {
         flex-direction: column;
+        margin-top: 15px;
 
         /* contain left */
 
         &__contain__left {
-            margin-top: 15px;
+            margin-top: 0px;
         }
 
         &__title {
@@ -127,16 +128,18 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             margin-top: 24px;
+            height: 32px;
         }
 
         &__host {
-            margin-top: 16px;
+            margin-top: 0px;
 
             &__name {
-                height: 33px;
+                height: 32px;
+                width: 63px;
                 font-size: 12px;
                 margin-right: 10px;
-                margin-top: 6px;
+                margin-top: 0px;
                 line-height: 17.11px;
             }
 
@@ -149,8 +152,9 @@
         &__rating {
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             gap: 6.59px;
-            margin-top: 27px;
+            margin-top: 0;
 
             &__star {
                 width: 18px;

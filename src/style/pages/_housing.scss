@@ -8,6 +8,12 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 875px) {
+    .housing {
+        margin: 27px 40px 15px 40px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .housing {
         margin: 27px 20px 15px 20px;

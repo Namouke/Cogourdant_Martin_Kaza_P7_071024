@@ -21,9 +21,7 @@ const HousingInformation = ({ housingData }) => {
             <div className="housingInformation__contain__right">
                 <div className='housingInformation__host'>
                     <p className="housingInformation__host__name">{housingData.host.name}</p>
-                    <div>
-                        <img src={housingData.host.picture} alt={housingData.host.name} className="housingInformation__host__picture" />
-                    </div>
+                    <img src={housingData.host.picture} alt={housingData.host.name} className="housingInformation__host__picture" />
                 </div>
 
                 <div className="housingInformation__rating">

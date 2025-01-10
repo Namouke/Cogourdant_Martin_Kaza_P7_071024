@@ -2,6 +2,7 @@
 @import '/src/style/base/variables.scss';
 
 .accordion {
+    position: relative;
     margin-left: 108px;
     margin-right: 109px;
     font-family: $font-family-base;
@@ -9,6 +10,8 @@
 }
 
 .accordion__wrap {
+    position: relative;
+    z-index: 2;
     @include flexSpaceBetween;
     background-color: $color-primary;
     height: 47px;
@@ -49,15 +52,22 @@
     color: $color-primary;
     font-size: 24px;
     padding: 0;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     overflow: hidden;
+    position: relative;
+    margin-top: -5px;
     transition: padding 0.3s ease, max-height 0.3s ease;
+    z-index: 1;
+    opacity: 0;
 
 }
 
 .accordion__content.open {
     padding: 27px 27px 19px 18px;
     margin-bottom: 31px;
+    opacity: 1;
+    transition: padding 0.3s ease, max-height 0.3s ease;
 }
 
 @media screen and (max-width: 875px) {

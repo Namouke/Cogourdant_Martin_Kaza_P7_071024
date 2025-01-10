@@ -11,16 +11,16 @@ import Footer from "./layout/Footer"
 const AppRouter = () => {
     return (
         <Router>
-            <div>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/housing/:id" element={<HousingPage />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="*" element={<ErrorPage />} />
-                </Routes>
-                <Footer />
-            </div>
+
+            <Header />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/housing/:id" element={<HousingPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="*" element={<ErrorPage />} />
+            </Routes>
+            <Footer />
+
         </Router>
     )
 }
