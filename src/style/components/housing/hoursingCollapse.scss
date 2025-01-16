@@ -31,7 +31,25 @@
     }
 }
 
-/* @media screen and (max-width: 875px)*/
+@media screen and (max-width: 1000px) {
+    .housing__collapse {
+        margin-top: 16px;
+        flex-direction: column;
+        gap: 0px;
+
+
+        .accordion__wrap {
+            height: 38px;
+        }
+
+        .accordion__title {
+            font-size: 15px;
+            height: 19px;
+            margin-left: 11.51px;
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     .housing__collapse {
         margin-top: 16px;

@@ -14,7 +14,7 @@
     }
 
     &__title {
-        height: 51px;
+        height: max-content;
         color: $color-primary;
         font-size: 36px;
         line-height: 51.34px;
@@ -85,7 +85,47 @@
 
 }
 
-/* @media screen and (max-width: 875px)*/
+
+@media screen and (max-width: 875px) {
+    .housingInformation {
+        flex-direction: column;
+        margin-top: 15px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 37px;
+        }
+
+        &__location {
+            height: 24px;
+            font-size: 16px;
+            line-height: 22.67px;
+        }
+
+        &__tag {
+            margin-top: 15px;
+
+            &__contain {
+                font-size: 12px;
+                padding: 3px 22px 2px;
+                border-radius: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        /* contain right */
+
+        &__contain__right {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 500px) {
     .housingInformation {
         flex-direction: column;
