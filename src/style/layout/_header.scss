@@ -4,85 +4,81 @@
     margin: 40px 100px 0px 100px;
     font-family: $font-family-base;
     font-weight: 500;
-}
 
-.header__logo {
-    width: 210.32px;
-    height: 68px;
-}
+    &__logo {
+        width: 210.32px;
+        height: 68px;
+    }
 
-.header__nav {
-    @include flexSpaceBetween;
-    color: $color-primary;
-    width: 309px;
-    height: 34px;
-}
+    &__nav {
+        @include flexSpaceBetween;
+        color: $color-primary;
+        width: 309px;
+        height: 34px;
 
-.nav__button__acceuil {
-    @include headerBtnNav;
-    width: 136px;
+        &__acceuil {
+            @include headerBtnNav;
+            width: 136px;
 
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        &__propos {
+            @include headerBtnNav;
+            width: 116px;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
     }
 }
-
-.nav__button__propos {
-    @include headerBtnNav;
-    width: 116px;
-
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-}
-
-// Screen 875px
 
 @media screen and (max-width: 875px) {
 
     .header {
         height: 58px;
         margin: 40px 50px 0px 50px;
-    }
 
-    .header__logo {
-        width: 175px;
-        height: 58px;
-    }
+        &__logo {
+            width: 175px;
+            height: 58px;
+        }
 
-    .header__nav {
-        height: 25px;
-    }
+        &__nav {
+            height: 25px;
 
-    .nav__button__acceuil,
-    .nav__button__propos {
-        font-size: 18px;
+            &__acceuil,
+            &__propos {
+                font-size: 18px;
+            }
+        }
     }
 }
-
-// Screen 500px
 
 @media screen and (max-width: 500px) {
     .header {
         max-width: 100%;
         height: 47px;
         margin: 20px 20px 0px 20px;
-    }
 
-    .header__logo {
-        width: 145px;
-        height: 47px;
-    }
+        &__logo {
+            width: 145px;
+            height: 47px;
+        }
 
-    .header__nav {
-        max-width: 140px;
-        height: 17px;
-    }
+        &__nav {
+            max-width: 140px;
+            height: 17px;
 
-    .nav__button__acceuil,
-    .nav__button__propos {
-        font-size: 12px;
+            &__acceuil,
+            &__propos {
+                font-size: 12px;
+            }
+        }
     }
 }
