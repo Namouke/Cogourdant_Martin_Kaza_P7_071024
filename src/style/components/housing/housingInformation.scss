@@ -91,6 +91,8 @@
         flex-direction: column;
         margin-top: 15px;
 
+        /* contain left */
+
         &__title {
             font-size: 24px;
             line-height: 37px;
@@ -121,6 +123,11 @@
             justify-content: space-between;
             margin-top: 24px;
             margin-bottom: 10px;
+        }
+
+        &__rating {
+            align-items: center;
+            margin-top: 0;
         }
     }
 }
@@ -190,8 +197,6 @@
         }
 
         &__rating {
-            display: flex;
-            justify-content: flex-end;
             align-items: center;
             gap: 6.59px;
             margin-top: 0;
