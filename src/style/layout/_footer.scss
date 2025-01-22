@@ -4,46 +4,46 @@
     font-family: $font-family-base;
     background-color: $color-fourth;
     height: 209px;
-}
 
-.footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
 
-.footer__logo {
-    width: 122px;
-    height: 39.44px;
-    margin: 66px 0 28.56px 0;
-}
+    &__logo {
+        width: 122px;
+        height: 39.44px;
+        margin: 66px 0 28.56px 0;
+    }
 
-.rights__reserved {
-    @include flexCenter;
-    color: $color-secondary;
-    height: 46px;
-    font-size: 24px;
-    font-weight: 500;
+    &__rights {
+        @include flexCenter;
+        color: $color-secondary;
+        height: 46px;
+        font-size: 24px;
+        font-weight: 500;
+    }
 }
-
-// Screen 875px
 
 @media screen and (max-width: 875px) {
-    .rights__reserved {
-        font-size: 20px;
+    .footer {
+        &__rights {
+            font-size: 20px;
+        }
     }
 }
 
-// Screen 500px
-
 @media screen and (max-width: 500px) {
-    .footer__logo {
-        margin: 62px 0 0 0;
-    }
+    .footer {
+        &__logo {
+            margin: 62px 0 0 0;
+        }
 
-    .rights__reserved {
-        font-size: 12px;
-        align-items: flex-end;
+        &__rights {
+            font-size: 12px;
+            align-items: flex-end;
+        }
     }
 }
