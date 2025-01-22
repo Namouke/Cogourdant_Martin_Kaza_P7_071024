@@ -5,7 +5,7 @@ import vectorClose from "../assets/collapseVectorClose.png"
 import "../style/components/collapse.scss"
 
 const Collapse = (props) => {
-    const {title, children, className=""} = props;
+    const { title, children, className = "" } = props;
 
     const [open, setOpen] = useState(false);
 
@@ -13,12 +13,12 @@ const Collapse = (props) => {
     return (
         <div className={`accordion ${className}`}>
             <div className={`accordion__wrap ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
-                <p className="accordion__title">{title}</p>
-                <div className="accordion__vector">
+                <p className="accordion__wrap__title">{title}</p>
+                <div className="accordion__wrap__vector">
                     {open ? (
-                        <img src={vectorOpen} className="vector__mod" alt="flèche vers le haut" />
+                        <img src={vectorOpen} className="accordion__wrap__vector__mod" alt="flèche vers le haut" />
                     ) : (
-                        <img src={vectorClose} className="vector__mod" alt="flèche vers le bas"></img>
+                        <img src={vectorClose} className="accordion__wrap__vector__mod" alt="flèche vers le bas"></img>
                     )}
                 </div>
             </div>
