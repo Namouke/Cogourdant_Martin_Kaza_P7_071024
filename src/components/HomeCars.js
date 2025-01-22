@@ -9,10 +9,10 @@ const homeCards = () => {
             {logementData.map((logement) => (
                 <Link to={`/housing/${logement.id}`}
                     key={logement.id}
-                    className='cards__link'>
-                    <div className="cards__content">
-                        <img src={logement.cover} alt={logement.title} className="cards__image"></img>
-                        <p className="cards__title">{logement.title}</p>
+                    className='home__cards__link'>
+                    <div className="home__cards__content">
+                        <img src={logement.cover} alt={logement.title} className="home__cards__content__image"></img>
+                        <p className="home__cards__content__title">{logement.title}</p>
                     </div>
                 </Link>
             ))}
