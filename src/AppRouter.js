@@ -6,7 +6,7 @@ import AboutPage from "./Pages/About";
 import ErrorPage from "./Pages/Error";
 import HomePage from "./Pages/Home";
 import Header from "./layout/Header";
-import Footer from "./layout/Footer"
+import Footer from "./layout/Footer";
 
 const AppRouter = () => {
     return (

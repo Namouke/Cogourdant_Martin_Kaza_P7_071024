@@ -29,7 +29,8 @@ const HousingPage = () => {
                 <Collapse title="Équipements" className="housing__collapse__equipement">
                     <ul>
                         {housingData.equipments.map((equipment, index) => (
-                            <li key={index}>{equipment}</li>
+                            <li key={index}
+                            >{equipment}</li>
                         ))}
                     </ul>
                 </Collapse>
