@@ -31,3 +31,47 @@
 .about__banner {
     margin-bottom: 31px;
 }
+
+@media screen and (max-width: 1055px) {
+    .banner {
+        margin-bottom: 25px;
+
+        &__img {
+            height: 171px;
+            border-radius: 20px;
+        }
+
+        &__title {
+            top: 50%;
+            left: 50%;
+            font-size: 28px;
+            line-height: 24px;
+        }
+    }
+
+    .about__banner {
+        margin-bottom: 21px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner {
+        margin-bottom: 22px;
+
+        &__img {
+            height: 111px;
+            border-radius: 10px;
+        }
+
+        &__title {
+            top: 50%;
+            left: 36%;
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .about__banner {
+        margin-bottom: 19px;
+    }
+}
