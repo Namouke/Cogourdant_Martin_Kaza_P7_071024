@@ -46,3 +46,17 @@
         text-decoration-thickness: 2px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+        height: 255px;
+        margin-bottom: 10px;
+
+        &__title {
+            width: 295.59px;
+            bottom: 15px;
+            margin: 0 19.71px 0 19.71px;
+        }
+    }
+}
