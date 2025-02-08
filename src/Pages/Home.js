@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner.js';
-import HomeCards from '../components/HomeCars';
+import HomeCards from '../components/Home/HomeCards';
 import imgAcc from '../assets/imageAcceuil.png'
 import "../style/pages/_Home.scss"
 

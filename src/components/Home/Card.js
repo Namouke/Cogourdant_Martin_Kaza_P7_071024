@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const cards = (props) => {
+const card = (props) => {
     const { img, title, alt, id, className = "" } = props;
 
     return (
@@ -13,4 +13,4 @@ const cards = (props) => {
 
 }
 
-export default cards;
+export default card;

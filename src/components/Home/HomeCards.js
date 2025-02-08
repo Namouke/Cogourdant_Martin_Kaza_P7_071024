@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logementData from "../data/logements.json";
-import "../style/components/homeCards.scss"
+import logementData from "../../data/logements.json";
+import "../../style/components/home/homeCards.scss"
 
 const homeCards = () => {
     return (
