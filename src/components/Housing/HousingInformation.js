@@ -7,14 +7,16 @@ import "../../style/components/housing/housingInformation.scss"
 
 
 const HousingInformation = ({ housingData }) => {
-    console.log(housingData.tags);
+
     return (
         <section className="housingInformation">
             <div className="housingInformation__contain__left">
                 <p className="housingInformation__title">{housingData.title}</p>
                 <p className="housingInformation__location">{housingData.location}</p>
                 <div className='housingInformation__tag'>
-                    <Tags />
+                    {housingData.tags.map((tag, index) => (
+                        <Tags key={index} tag={tag} />
+                    ))}
                 </div>
             </div>
             <div className="housingInformation__contain__right">

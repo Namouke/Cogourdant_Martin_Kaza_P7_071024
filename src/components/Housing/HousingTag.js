@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/components/housing/housingTag.scss"
 
 const tag = (props) => {
     const { tag, className = "" } = props;
