@@ -30,15 +30,6 @@
     &__tag {
         display: flex;
         margin-top: 20px;
-
-        &__contain {
-            font-size: 14px;
-            padding: 3px 22px 2px;
-            border-radius: 10px;
-            background-color: $color-primary;
-            color: $color-secondary;
-            margin-right: 10px;
-        }
     }
 
     /* contain right */
@@ -106,13 +97,6 @@
 
         &__tag {
             margin-top: 15px;
-
-            &__contain {
-                font-size: 12px;
-                padding: 3px 22px 2px;
-                border-radius: 10px;
-                margin-right: 10px;
-            }
         }
 
         /* contain right */
@@ -159,13 +143,6 @@
 
         &__tag {
             margin-top: 10px;
-
-            &__contain {
-                font-size: 10px;
-                padding: 3px 22px 2px;
-                margin-right: 10px;
-                border-radius: 5px;
-            }
         }
 
         /* contain right */

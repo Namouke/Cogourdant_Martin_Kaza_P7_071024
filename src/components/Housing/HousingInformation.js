@@ -1,4 +1,5 @@
 import React from 'react';
+import Tags from '../../components/Housing/HousingTag'
 import RatingStarFilled from '../../assets/starFilled.png'
 import RatingStarEmpty from '../../assets/starEmpty.png'
 import "../../style/components/housing/housingInformation.scss"
@@ -6,16 +7,14 @@ import "../../style/components/housing/housingInformation.scss"
 
 
 const HousingInformation = ({ housingData }) => {
-
+    console.log(housingData.tags);
     return (
         <section className="housingInformation">
             <div className="housingInformation__contain__left">
                 <p className="housingInformation__title">{housingData.title}</p>
                 <p className="housingInformation__location">{housingData.location}</p>
                 <div className='housingInformation__tag'>
-                    {housingData.tags.map((tag, index) => (
-                        <span key={index} className="housingInformation__tag__contain">{tag}</span>
-                    ))}
+                    <Tags />
                 </div>
             </div>
             <div className="housingInformation__contain__right">
